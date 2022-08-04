@@ -88,5 +88,5 @@ def wrapping_knots(basis_path):
 
 	plt.show()
 
-# wrapping_controlps("basis_data1_2500/basis_array_")
-wrapping_knots("basis_data2_2500/basis_array_")
+wrapping_controlps("basis_data1_2500/basis_array_")
+# wrapping_knots("basis_data2_2500/basis_array_")
