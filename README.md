@@ -77,5 +77,6 @@ Welcome others' comments in second methods.
 
 ### References
 [1] https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/spline/B-spline/bspline-curve-closed.html
+
 [2] https://github.com/zeroXzero/multires_curve_editing
 
