@@ -11,10 +11,10 @@ Therefore, I provide my algorithm by using these two methods. Both of them will 
 
 $$ C(u) = \sum_{i=0}^n N_{i,p}(u)P_i $$
 
-The attribute m = n+p+1 is also valid in both circumstance. The differences between them are in how to get $$N_{i,p}$$ 
+The attribute m = n+p+1 is also valid in both circumstance. The differences between them are in how to get $N_{i,p}$
 ###  Wrapping Control Points
     
-This method design an uniform knot sequence of m+1 knots, the domain of curve is [$$u_p$$, $$u_{n-p}$$]. The corresponding
+This method design an uniform knot sequence of m+1 knots, the domain of curve is [$u_p$, $u_{n-p}$]. The corresponding
 code in basis_array.py is shown as followed:
 
 ```buildoutcfg
@@ -48,7 +48,7 @@ Because the knots area in this method is constructed as a circle, like from 0 to
 we cannot use the same deboor() function in basis_array2.py, as shown in fig2 ![AnVIL Image](./output/basis_fig_4.png)
 
 Upper figure focuses on area from 0 to 1 and lower one is the opposite direction. Therefore, when using function denoted by color line,
-if we only input random x, we cannot get correct y, like for purple line, in [0.6,1] area, two directions 
+if we only input random x, we cannot get correct y, like for green line, in [0.4,0.6) area, two directions 
 have different function and both are not zero. Not only should we input x, we also need to set x is in which area: is from [0.6,1] or [1,0).
 The specific adjustment is shown in new deboor() function.
 
