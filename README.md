@@ -1,4 +1,4 @@
-## closed B-spline curve
+# closed B-spline curve
 
 
 
@@ -49,7 +49,7 @@ we cannot use the same deboor() function in basis_array2.py, as shown in fig2 ![
 
 Upper figure focuses on area from 0 to 1 and lower one is the opposite direction. Therefore, when using function denoted by color line,
 if we only input random x, we cannot get correct y, like for green line, in [0.4,0.6) area, two directions 
-have different function and both are not zero. Not only should we input x, we also need to set x is in which area: is from [0.6,1] or [1,0).
+have different function and both are not zero. Not only should we input x, we also need to set x is in which area: is from [0.4,0.6） or [1,0).
 The specific adjustment is shown in new deboor() function.
 
 The knots setting can be found in line42, 43, 46,47 in basis_array2.py, the control points definition is shown in line 51,52 in closed_curve.py. 
