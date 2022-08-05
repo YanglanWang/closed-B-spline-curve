@@ -8,13 +8,13 @@ explain specific algortihm in detail, which may be still hard for people to unde
 
 Therefore, I provide my algorithm by using these two methods. Both of them will use the same B-spline curve synthesis function:
 
-```math
-C(u) = \sum_{i=0}^n N_{i,p}(u)P_i
-```
+
+$$ C(u) = \sum_{i=0}^n N_{i,p}(u)P_i $$
+
 The attribute m = n+p+1 is also valid in both circumstance. The differences between them are in how to get $$N_{i,p}$$ 
 ###  Wrapping Control Points
     
-    This method design an uniform knot sequence of m+1 knots, the domain of curve is [$$u_p$$, $$u_{n-p}$$]. The corresponding
+This method design an uniform knot sequence of m+1 knots, the domain of curve is [$$u_p$$, $$u_{n-p}$$]. The corresponding
 code in basis_array.py is shown as followed:
 
 ```buildoutcfg
@@ -71,6 +71,6 @@ The final result is shown:
 ![AnVIL Image](./output/wrapping_knots.png)
 
 Actually, I am not sure wrapping knots method is right or not. Because from image, the degree of continuity is not so good. 
-git Welcome others' comments in second methods.
+Welcome others' comments in second methods.
 
 
